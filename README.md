@@ -10,7 +10,7 @@ Analysiert werden 1.200 simulierte Gewerbekunden-Lieferstellen mit Verbrauchs-, 
 
 - Erstellung eines simulierten Gewerbekunden-Datensatzes mit 1.200 Lieferstellen
 - Bereinigung systematischer Importfehler und Behandlung von 40 fehlenden Verbrauchswerten mittels Spaltenmittelwert
-- Berechnung des Netto-Spreads je kWh sowie der monatlichen Marge in Euro pro Lieferstelle
+- Berechnung der monatlichen Marge in Euro pro Lieferstelle
 - Identifikation und Sortierung aller Kunden mit negativer Marge
 - Automatisierte Erstellung eines Excel-Reports für die Verlustkundenanalyse
 - Visualisierung der Top-10-Verlustkunden
