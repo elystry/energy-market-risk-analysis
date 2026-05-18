@@ -1,16 +1,27 @@
-# Automated Risk Analysis – Energy Retail Market (Gewerbekunden)
+# Automated Portfolio Risk Analysis
 
-## Business Context (Energiewirtschaftlicher Hintergrund)
-Ziel dieses Projekts war es, das unprofitable Portfolio (Negative Margen) im Gewerbekunden-Bereich (1.200 Industriekunden) zu identifizieren und für das Vertriebs-Controlling aufzubereiten.
+## Business Context
+
+Ziel dieses Projekts ist es, ein unprofitables Gewerbekunden-Portfolio anhand negativer Margen zu identifizieren und für das Vertriebs- und Portfoliocontrolling aufzubereiten.
+
+Analysiert werden 1.200 simulierte Gewerbekunden-Lieferstellen mit Verbrauchs-, Tarif- und Beschaffungskosteninformationen.
 
 ## Methodik
-* Systematische Formatfehler beim Import korrigiert und 40 fehlende Verbräuche ("Verbrauch_kWh") mittels mathematischer Interpolation (Spalten-Mittelwert) bereinigt, um das Gesamtvolumen nicht zu verzerren.
-* Berechnung des Netto-Spreads ("Tarif_Cent_kWh" vs. "Netz_und_Einkauf_Cent_kWh") und Errechnung des monatlichen Deckungsbeitrags ("Marge_Euro") pro Lieferstelle.
-* Automatisierte Erstellung eines Excel-Reports für das Vertriebs-Management, inkl. farblicher Alarmierung der Top-Verlustbringer für anstehende Portfolio-Bereinigungen oder Nachverhandlungen.
+
+- Erstellung eines simulierten Gewerbekunden-Datensatzes mit 1.200 Lieferstellen
+- Bereinigung systematischer Importfehler und Behandlung von 40 fehlenden Verbrauchswerten mittels Spaltenmittelwert
+- Berechnung des Netto-Spreads je kWh sowie der monatlichen Marge in Euro pro Lieferstelle
+- Identifikation und Sortierung aller Kunden mit negativer Marge
+- Automatisierte Erstellung eines Excel-Reports für die Verlustkundenanalyse
+- Visualisierung der Top-10-Verlustkunden
+- Analyse der Verluste nach Branche und Monat
+- Berechnung zentraler Kennzahlen wie Anzahl der Verlustkunden und gesamter Portfolioverlust
 
 ## Tech Stack
-* Python
-* Pandas
-* NumPy
-* Jupyter Notebook
-* Excel Reporting
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Jupyter Notebook
+- Excel Reporting
